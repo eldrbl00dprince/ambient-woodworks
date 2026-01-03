@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<title>Ambient Woodworks</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">   
+</head>
+
+<body>
+
+<h1>Ambient Woodworks</h1>
+<div id="hero">
+    <!--Materialen-->
+    <div class="material">
+        <ul>
+            <li data-category="eik" class="active">E<br>I<br>K</li>
+            <li data-category="den">D<br>E<br>N</li> <!--geurend Zirben Alpenden-->
+        </ul>
+        <img> <!--Color picker verf-->
+    </div> 
+    <div id="furniture-picker">  
+        <div class="header">
+            <h3>Kies meubel:</h3>
+            <ul>
+                <li class="active" data-category="stoel">/Stoel</li>
+                <li data-category="tafel">/Tafel</li>
+                <li data-category="kast">/Kast</li>
+                <li data-category="bed">/Bed</li>
+            </ul>
+        </div>
+        <div class="placeholder">
+            <div class="box">
+                <!--<img src="images/curl.84744590.svg" style="color: black;">-->
+                <div class="stoel category active">
+                <!--Stoel-->
+                    <span>Schommelstoel</span>
+                    <ul>
+                        <li>Schommelstoel</li>
+                    </ul>
+                    <span>Lage Stoel</span>
+                    <ul>
+                        <li>Lage stoel I</li>
+                        <span>•</span>
+                        <li>Lage stoel II</li>
+                        <span>•</span>
+                        <li> Lage stoel III</li>
+                    </ul>
+                    <span>Hoge Stoel</span>
+                    <ul>
+                        <li>Hoge stoel I</li>
+                        <span>•</span>
+                        <li> Hoge stoel II</li>
+                    </ul>
+                </div>
+                <div class="tafel category">
+                <!--Tafel-->
+                    <span>Eettafel</span>
+                    <ul>
+                        <li>Eettafel I</li>
+                        <span>•</span>
+                        <li>Eettafel II</li>
+                    </ul>
+                    <span>Buro</span>
+                    <ul>
+                        <li>Buro I</li>
+                        <span>•</span>
+                        <li>Buro II</li>
+                    </ul>
+                    </div>
+                <div class="kast category">
+                <!--Kast-->
+                    <span>Kledingkast</span>
+                    <ul>
+                        <li>Kledingkast I</li>
+                        <span>•</span>
+                        <li>Kledingkast II</li>
+                        <span>•</span>
+                        <li>Kledingkast III</li>
+                    </ul>
+                    <span>Nachtkast</span>
+                    <ul>
+                        <li>Nachtkast I</li>
+                        <span>•</span>
+                        <li>Nachtkast II</li>
+                    </ul>
+                </div>
+                <div class="bed category">
+                <!--Bed-->
+                    <span>Tweepersoonsbed</span>
+                    <ul>
+                        <li>Tweepersoonsbed I</li>
+                        <span>•</span>
+                        <li>Tweepersoonsbed II</li>
+                        <li>Tweepersoonsbed III</li>
+                    </ul>
+                    <span>Eenpersoonsbed</span>
+                    <ul>
+                        <li>Eenpersoonsbed I</li>
+                        <span>•</span>
+                        <li>Eenpersoonsbed II</li>
+                    </ul>
+                    <span>Kinderbed</span>
+                    <ul>
+                        <li>Kinderbed I</li>
+                        <span>•</span>
+                        <li>Kinderbed II</li>
+                    </ul>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <div id="furniture-viewer">
+        <div class="placeholder">
+        <img alt="Stoel" src="images/eik/stoel_i.jpg" width="300" height="300" style="object-fit: contain;">
+        <ul>
+            <li>Gewicht:<br>20 kg</li>
+            <li>Pakket:<br>100x80x40 cm&#179;</li>
+            <li>Levertijd:<br>3 dagen</li>
+        </ul>
+        </div>
+        <div class="add-basket">
+        <svg class="icon-cross" width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+            <rect x="10" y="0" width="2" height="22"/>
+            <rect x="0" y="10" width="22" height="2"/>
+        </svg>
+        <span>Toevoegen aan Winkelmandje</span>
+        </div>
+    </div>
+</div>
+<div id="Line"></div>
+<div id="Materials"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

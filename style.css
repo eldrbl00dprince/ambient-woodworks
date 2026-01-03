@@ -1,0 +1,247 @@
+/* Global */
+
+html, body {
+  height: 100%;
+  overflow: hidden; /* Prevents any scrolling */
+}
+
+body {
+    max-width: 1000px;
+    padding: 0 50px;
+    margin: auto;
+    opacity: 0;
+    /* Animation: name duration timing-function fill-mode */
+    animation: fadeIn 1.5s ease-out forwards;
+    background-color: rgb(247, 244, 232);
+    background-image: url(images/background.jpg);
+    background-size: cover;
+
+}
+
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: "Playfair Display", serif;
+}
+
+/* HERO */
+
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background: white;
+    padding: 20px;
+    border: 4px black solid;
+}
+
+/* Furniture Picker */
+
+/* Header */
+#furniture-picker .header {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    border-bottom: 1px dotted;
+    margin-bottom: 8px;
+}
+
+#furniture-picker .header h3 {
+    font-family: Arial, serif;
+    font-size: 20px;
+    height: 0px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+#furniture-picker .header ul {
+    display: flex;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 20px;
+    height: auto;
+    transform: translate(0, 3px);
+}
+
+#furniture-picker .header ul :hover,
+#furniture-picker .header ul .active {
+    color: red;
+    font-style: italic;
+    cursor: pointer;
+}
+
+/* Box */
+
+#furniture-picker .box .category {
+    flex-direction: column;
+    gap: 20px;
+}
+
+#furniture-picker .box .active {
+    display: flex;
+}
+
+#furniture-picker .box .category:not(.active) {
+    display: none;
+}
+
+
+#furniture-picker .box {
+    height: 300px;
+    width: 400px;
+    padding: 40px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#furniture-picker .box img {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#furniture-picker .box div > span {
+    font-family:Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    text-align: center;
+    transition: all .1s;
+}
+
+#furniture-picker .box div > span:hover { /* Open up Model Line exposition view*/
+    font-style: oblique;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+#furniture-picker .box div ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    font-family: Arial;
+}
+
+#furniture-picker .box div ul li:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    cursor: pointer;
+}
+
+#furniture-picker .placeholder {
+    display: flex;
+}
+
+/* Materials */
+
+#hero .material {
+    transform: translateX(-506px);
+    position: absolute;
+}
+
+#hero .material ul {
+    font-family: Arial;
+    line-height: 20px;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 24px;
+    min-width: 20px;
+}
+
+#hero .material ul li {
+    text-align: center;
+    transition: transform .1s;
+    cursor: pointer;
+}
+
+#hero .material li.active,
+#hero .material li:hover {
+    transform: translate(-4px);
+    border-right: 4px solid;
+}
+
+
+/* Furniture Viewer */
+
+#furniture-viewer {
+    margin: auto;
+    display: flex;
+}
+
+#furniture-viewer ul {
+    display: flex;
+    padding-top: 12px;
+}
+
+#furniture-viewer li {
+    flex:1;
+    text-align: center;
+    font-family: monospace;
+    font-size: 12px;
+    color: gray;
+}
+
+#furniture-viewer img {
+    box-shadow: 10px 10px gray;
+    background-size: contain;
+    background-color: #dde3e6
+}
+
+#furniture-viewer .add-basket {
+    position: absolute;
+    transform: translate(301px, -13px);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: oblique;
+    font-size: 16px;
+    color: gray;
+}
+
+#furniture-viewer .add-basket svg {
+    color: red;
+}
+
+#furniture-viewer span {
+    transform:translateX(-20px);
+    white-space: nowrap;
+    opacity: 0;
+    transition: all .3s;
+}
+
+#furniture-viewer .add-basket:hover span {
+    transform:translateX(0px);
+    opacity: 1;
+}
+
+#furniture-viewer .add-basket:hover {
+    cursor: pointer;
+}
